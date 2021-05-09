@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="记录小薯条的成长">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/css/images/logo.jpg">
+  
+  <title>
+    
+      薯条的博客
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+    
+<script src="/js/qrious.js"></script>
+
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+  
+  
+    
+<script src="/js/local-search.js"></script>
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>薯条的博客</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">标签</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">归档</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">项目</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">关于我</a>
+          
+        </li>
+      
+      
+        <li class="menu-item menu-item-search right-list">
+    <a role="button" class="popup-trigger">
+        <i class="fa fa-search fa-fw"></i>
+    </a>
+</li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">首页</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">标签</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">归档</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">项目</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">关于我</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+    
+      <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+            </span>
+            <div class="search-input-container">
+                <input autocomplete="off" autocapitalize="off"
+                    placeholder="Please enter your keyword(s) to search." spellcheck="false"
+                    type="search" class="search-input">
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa fa-times-circle"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2></h2>
+  <p class="post-date">2021-05-09</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h1 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a>ES6</h1><h1 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h1><p>ES6， 全称 <strong>ECMAScript 6.0</strong> ，是 JavaScript 的下一个版本标准，2015.06 发版。</p>
+<p>ES6 主要是为了解决 ES5 的先天不足，比如 JavaScript 里并没有类的概念，但是目前浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。</p>
+<p>目前各大浏览器基本上都支持 ES6 的新特性，其中 Chrome 和 Firefox 浏览器对 ES6 新特性最友好，IE7~11 基本不支持 ES6。</p>
+<h1 id="2、语法学习"><a href="#2、语法学习" class="headerlink" title="2、语法学习"></a>2、语法学习</h1><h2 id="1、let和const"><a href="#1、let和const" class="headerlink" title="1、let和const"></a>1、let和const</h2><p>let 声明的变量只在 let 命令所在的代码块内有效。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">0</span>;</span><br><span class="line">    a    <span class="comment">//0</span></span><br><span class="line">&#125;</span><br><span class="line">a <span class="comment">// 报错 ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>代码块内有效</li>
+<li>不能重复声明</li>
+<li>适合用于循环计数器</li>
+<li>不存在变量提升</li>
+</ul>
+</blockquote>
+<p>const 声明一个只读的常量，一旦声明，常量的值就不能改变。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> PI = <span class="string">&quot;3.1415926&quot;</span>;</span><br><span class="line">PI  <span class="comment">// 3.1415926</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MY_AGE;  <span class="comment">// SyntaxError: Missing initializer in const declaration    </span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>const 保证的不是变量的值不变，而是保证变量指向的内存地址所保存的数据不允许改动。</p>
+</blockquote>
+<h2 id="2、解构赋值"><a href="#2、解构赋值" class="headerlink" title="2、解构赋值"></a>2、解构赋值</h2><h3 id="2-1、概述"><a href="#2-1、概述" class="headerlink" title="2.1、概述"></a>2.1、概述</h3><p>概念：解构赋值是对赋值运算符的扩展。针对数组或者对象进行模式匹配，然后对其中的变量进行赋值。</p>
+<p>作用：代码书写上简洁易读，语义更加清晰明了，也方便了在复杂对象中数据字段的获取。</p>
+<p>组成：解构的源，解构赋值表达式的右边部分；解构的目标，解构赋值表达式的左边部分</p>
+<h3 id="2-2、数组模型的解构"><a href="#2-2、数组模型的解构" class="headerlink" title="2.2、数组模型的解构"></a>2.2、数组模型的解构</h3><p><strong>基本用法</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a,b,c] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="comment">// a = 1</span></span><br><span class="line"><span class="comment">// b = 2</span></span><br><span class="line"><span class="comment">// c = 3</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>嵌套</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a,[[b],c]] = [<span class="number">1</span>,[[<span class="number">2</span>],<span class="number">3</span>]];</span><br><span class="line"><span class="comment">// a = 1</span></span><br><span class="line"><span class="comment">// b = 2</span></span><br><span class="line"><span class="comment">// c = 3</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>忽略</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a,,b] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="comment">// a = 1</span></span><br><span class="line"><span class="comment">// c = 3</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>不完全解构</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a = <span class="number">1</span>,b] = []; <span class="comment">// a = 1, b = undefined</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>剩余运算符</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a,...b] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="comment">// a = 1</span></span><br><span class="line"><span class="comment">// b = [2,3]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>字符串</strong></p>
+<p>在数组结构中，解构目标若为可遍历对象，皆可进行解构赋值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> = [a,b,c,d,e] = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"><span class="comment">// a = &#x27;h&#x27;</span></span><br><span class="line"><span class="comment">// b = &#x27;e&#x27;</span></span><br><span class="line"><span class="comment">// c = &#x27;l&#x27;</span></span><br><span class="line"><span class="comment">// d = &#x27;l&#x27;</span></span><br><span class="line"><span class="comment">// e = &#x27;o&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>解构默认值</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> = [a = <span class="number">2</span>] = [<span class="literal">undefined</span>];  <span class="comment">//a = 2</span></span><br></pre></td></tr></table></figure>
+
+<p>当解构模式有匹配结果，且匹配结果是undefined时，会触发默认值作为返回结果</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [a = <span class="number">3</span>, b = a] = [];</span><br><span class="line"><span class="keyword">let</span> [a = <span class="number">3</span>, b = a] = [<span class="number">1</span>];</span><br><span class="line"><span class="keyword">let</span> [a = <span class="number">3</span>, b = a] = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="comment">// 以上三个表达式中,a,b的值是多少</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3、对象模型解构"><a href="#2-3、对象模型解构" class="headerlink" title="2.3、对象模型解构"></a>2.3、对象模型解构</h3><p><strong>基本用法</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;name,age&#125; = &#123;<span class="attr">name</span>:<span class="string">&#x27;tom&#x27;</span>,<span class="attr">age</span>:<span class="number">4</span>&#125;</span><br><span class="line"><span class="comment">// name = &#x27;tom&#x27;</span></span><br><span class="line"><span class="comment">// age = 4</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">name</span>:Name&#125; = &#123;<span class="attr">name</span>:<span class="string">&#x27;jerry&#x27;</span>&#125;</span><br><span class="line"><span class="comment">// Name = &#x27;jerry&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>嵌套、忽略</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">p</span>:[<span class="string">&#x27;hello&#x27;</span>,&#123;<span class="attr">y</span>:<span class="string">&#x27;world&#x27;</span>&#125;]&#125;;</span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">p</span>:[x,&#123;y&#125;]&#125; = obj;</span><br><span class="line"><span class="comment">// x = &#x27;hello&#x27;</span></span><br><span class="line"><span class="comment">// y = &#x27;world&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">p</span>:[<span class="string">&#x27;hello&#x27;</span>,&#123;<span class="attr">y</span>:<span class="string">&#x27;world&#x27;</span>&#125;]&#125;;</span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">p</span>:[x,&#123;&#125;]&#125; = obj;   <span class="comment">// x = hello</span></span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">p</span>:[,&#123;y&#125;]&#125; = obj;   <span class="comment">// y = world</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>不完全解构</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> obj = &#123;<span class="attr">p</span>:[&#123;<span class="attr">y</span>:<span class="string">&#x27;world&#x27;</span>&#125;]&#125;;</span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">p</span>:[&#123;y&#125;,x]&#125; = obj;</span><br><span class="line"><span class="comment">// x = undefined</span></span><br><span class="line"><span class="comment">// y = &#x27;world&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>剩余运算符</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> = &#123;a, b, ...rest&#125; = &#123;<span class="attr">a</span>:<span class="number">10</span>, <span class="attr">b</span>:<span class="number">20</span>, <span class="attr">c</span>:<span class="number">30</span>, <span class="attr">d</span>:<span class="number">40</span>&#125;;</span><br><span class="line"><span class="comment">// a = 10</span></span><br><span class="line"><span class="comment">// b = 20</span></span><br><span class="line"><span class="comment">// rest = &#123;c:30,d:40&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>解构默认值</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> &#123;a = <span class="number">10</span>, b = <span class="number">5</span>&#125; = &#123;<span class="attr">a</span>:<span class="number">3</span>&#125;;</span><br><span class="line"><span class="comment">// a = 3; b = 5;</span></span><br><span class="line"><span class="keyword">let</span> &#123;<span class="attr">a</span>: aa = <span class="number">10</span>, <span class="attr">b</span>: bb = <span class="number">5</span>&#125; = &#123;<span class="attr">a</span>:<span class="number">3</span>&#125;;</span><br><span class="line"><span class="comment">// aa = 3; bb = 5; </span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3、Symbol"><a href="#3、Symbol" class="headerlink" title="3、Symbol"></a>3、Symbol</h2><h3 id="3-1、概述"><a href="#3-1、概述" class="headerlink" title="3.1、概述"></a>3.1、概述</h3><p>数据类型除了原先的Number、String、Boolean、Object、null、undefined，新增了Symbol</p>
+<p>ES6中引入了一种新的原始数据类型Symbol，表示独一无二的值，用来定义对象的唯一属性名</p>
+<h3 id="3-2、基本用法"><a href="#3-2、基本用法" class="headerlink" title="3.2、基本用法"></a>3.2、基本用法</h3><p>Symbol 函数栈不能用 new 命令，因为 Symbol 是原始数据类型，不是对象。可以接受一个字符串作为参数，为新创建的 Symbol 提供描述，用来显示在控制台或者作为字符串的时候使用，便于区分。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sy = <span class="built_in">Symbol</span>(<span class="string">&quot;KK&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(sy);  <span class="comment">// Symbol(kk)</span></span><br><span class="line"><span class="keyword">typeof</span>(sy);       <span class="comment">// &quot;symbol&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 相同参数Symbol()返回的值不相等</span></span><br><span class="line"><span class="keyword">let</span> sy1 = <span class="built_in">Symbol</span>(<span class="string">&quot;KK&quot;</span>)</span><br><span class="line">sy === sy1;     <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3、使用场景"><a href="#3-3、使用场景" class="headerlink" title="3.3、使用场景"></a>3.3、使用场景</h3><p><strong>作为属性名</strong></p>
+<p>由于每一个Symbol的值都是不相等的，所以Symbol作为对象的属性名，可以保证属性不重名</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sy = <span class="built_in">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//写法1</span></span><br><span class="line"><span class="keyword">let</span> syObject = &#123;&#125;;</span><br><span class="line">syObject[sy] = <span class="string">&quot;kk&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(syObject);     <span class="comment">// &#123;Symbol(key1):&quot;kk&quot;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//写法2</span></span><br><span class="line"><span class="keyword">let</span> syObject = &#123;</span><br><span class="line">    [sy]:<span class="string">&quot;kk&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(syObject);    <span class="comment">// &#123;Symbol(key1):&quot;kk&quot;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//写法3</span></span><br><span class="line"><span class="keyword">let</span> syObject = &#123;&#125;;</span><br><span class="line"><span class="built_in">Object</span>.defineProperty(syObject, sy, &#123;<span class="attr">value</span>: <span class="string">&quot;kk&quot;</span>&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(syObject);   <span class="comment">// &#123;Symbol(key1): &quot;kk&quot;&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>通过属性名获取属性值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> sy = <span class="built_in">Symbol</span>(<span class="string">&quot;key1&quot;</span>);</span><br><span class="line">syObject[sy] = <span class="string">&quot;kk&quot;</span>;</span><br><span class="line"></span><br><span class="line">syObject[sy];   <span class="comment">// &quot;KK&quot;</span></span><br><span class="line">syObject.sy;    <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Symbol值作为属性名时，该属性是公有属性不是私有属性，可以在类的外部访问。但是不会出现在for…in、for…of的循环中，也不会被Object.keys()、Object.getOwnPropertyNames()返回。如果要读取一个对象的Symbol属性，可以通过Object.getOwnPropertySymbols()和Reflect.ownkerys()取到</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> syObject = &#123;&#125;;</span><br><span class="line">syObject[sy] = <span class="string">&quot;kk&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(syObject);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">in</span> syObject)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">    <span class="comment">//无输出</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">Object</span>.keys(syObject);                    <span class="comment">//[]</span></span><br><span class="line"><span class="built_in">Object</span>.getOwnPropertySymbol(syObject);    <span class="comment">//[Symbol(key1)]</span></span><br><span class="line"><span class="built_in">Reflect</span>.ownkeys();                        <span class="comment">//[Symbol(key1)]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>Symbol.for()</strong></p>
+<p>Symbol.for() 类似单例模式，首先会在全局搜索被登记的 Symbol 中是否有该字符串参数作为名称的 Symbol 值，如果有即返回该 Symbol 值，若没有则新建并返回一个以该字符串参数为名称的 Symbol 值，并登记在全局环境中供搜索。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> yellow = <span class="built_in">Symbol</span>(<span class="string">&#x27;Yellow&#x27;</span>);</span><br><span class="line"><span class="keyword">let</span> yellow = <span class="built_in">Symbol</span>.for(<span class="string">&quot;Yellow&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="4、Map与Set"><a href="#4、Map与Set" class="headerlink" title="4、Map与Set"></a>4、Map与Set</h2><h3 id="4-1、Map对象"><a href="#4-1、Map对象" class="headerlink" title="4.1、Map对象"></a>4.1、Map对象</h3><h4 id="4-1-1、Maps和Object的区别"><a href="#4-1-1、Maps和Object的区别" class="headerlink" title="4.1.1、Maps和Object的区别"></a>4.1.1、Maps和Object的区别</h4><blockquote>
+<ul>
+<li>一个Object的键只能是字符串或者是Symbols，但一个Map的键可以使任意值</li>
+<li>Map中的键值是有序的（FIFO原则），而添加到对象中的键则不是</li>
+<li>Map的键值对个数可以从size属性获取，而Object的键值对个人只能手动计算</li>
+<li>Object都有自己的原型，原型链上的键名有可能和自己在对象上设置的键名产生冲突</li>
+</ul>
+</blockquote>
+<h4 id="4-1-2、Map中的key"><a href="#4-1-2、Map中的key" class="headerlink" title="4.1.2、Map中的key"></a>4.1.2、Map中的key</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myMap = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// key是字符串</span></span><br><span class="line"><span class="keyword">var</span> keyString = <span class="string">&quot;a string&quot;</span>;</span><br><span class="line">myMap.set(keyString,<span class="string">&quot;和键&#x27;a string&#x27;关联的值&quot;</span>);</span><br><span class="line"></span><br><span class="line">myMap.get(keyString);    <span class="comment">//&quot;和键&#x27;a string&#x27;关联的值&quot;</span></span><br><span class="line">myMap.get(<span class="string">&quot;a string&quot;</span>);   <span class="comment">//&quot;和键&#x27;a string&#x27;关联的值&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// key是对象</span></span><br><span class="line"><span class="keyword">var</span> keyObj = &#123;&#125;;</span><br><span class="line">myMap.set()</span><br></pre></td></tr></table></figure>
+
+<p>5、Reflect和Proxy</p>
+<p>6、字符串</p>
+<p>7、数值</p>
+<p>8、对象</p>
+<p>9、数组</p>
+<p>10、函数</p>
+<p>11、迭代器</p>
+<p>12、Class类</p>
+<p>13、模块</p>
+<p>14、Promise对象</p>
+<p>15、Generator函数</p>
+<p>16、async函数</p>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/92e2c7a436cc.html">
+        <span class="nav-arrow">← </span>
+        
+          你好
+        
+      </a>
+    
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+      <div class="qrcode">
+        <canvas id="share-qrcode"></canvas>
+        <p class="notice">扫描二维码，分享此文章</p>
+      </div>
+    
+    <!-- 二维码 END -->
+    
+      <!-- Utterances START -->
+      <div id="utterances"></div>
+      <script src="https://utteranc.es/client.js"
+        repo=""
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async></script>    
+      <!-- Utterances END -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#ES6"><span class="toc-nav-text">ES6</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#1%E3%80%81%E7%AE%80%E4%BB%8B"><span class="toc-nav-text">1、简介</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#2%E3%80%81%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0"><span class="toc-nav-text">2、语法学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1%E3%80%81let%E5%92%8Cconst"><span class="toc-nav-text">1、let和const</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2%E3%80%81%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-nav-text">2、解构赋值</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-1%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-nav-text">2.1、概述</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-2%E3%80%81%E6%95%B0%E7%BB%84%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A7%A3%E6%9E%84"><span class="toc-nav-text">2.2、数组模型的解构</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-3%E3%80%81%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B%E8%A7%A3%E6%9E%84"><span class="toc-nav-text">2.3、对象模型解构</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3%E3%80%81Symbol"><span class="toc-nav-text">3、Symbol</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-1%E3%80%81%E6%A6%82%E8%BF%B0"><span class="toc-nav-text">3.1、概述</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-2%E3%80%81%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="toc-nav-text">3.2、基本用法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-3%E3%80%81%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-nav-text">3.3、使用场景</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#4%E3%80%81Map%E4%B8%8ESet"><span class="toc-nav-text">4、Map与Set</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4-1%E3%80%81Map%E5%AF%B9%E8%B1%A1"><span class="toc-nav-text">4.1、Map对象</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#4-1-1%E3%80%81Maps%E5%92%8CObject%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-nav-text">4.1.1、Maps和Object的区别</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#4-1-2%E3%80%81Map%E4%B8%AD%E7%9A%84key"><span class="toc-nav-text">4.1.2、Map中的key</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'http://shutiao.jiasiyuan.top/3b2c499c2a2e.html';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', '/css/images/error_icon.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== '/css/images/error_icon.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+  <script>
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+  </script>
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2021 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a target="_blank" rel="noopener" href="https://github.com/shutiao2019">薯条</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      hljs.configure({useBR: true});
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+
+<script src="/js/script.js"></script>
+
+
+  </body>
+</html>
